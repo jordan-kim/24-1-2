@@ -1,15 +1,15 @@
 # 주민등록번호 > 생년월일
-id_num = input("주민등록번호를 입력하세요(-포함) : ")
+id_number= input("주민등록번호를 입력하세요(-포함) : ")
 
-if(len(id_num) != 14) :
+if(len(id_number) != 14) :
     print("잘못된 길이입니다.")
     exit()
 
-year = id_num[0:2]
-month = id_num[2:4]
-day = id_num[4:6]
+year = id_number[0:2]
+month = id_number[2:4]
+day = id_number[4:6]
 
-gender = int(id_num[7])
+gender = int(id_number[7])
 
 if(gender == 1 or gender == 2) :
     year = "19" + year
