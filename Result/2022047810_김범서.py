@@ -7,11 +7,11 @@ day = id1[4:6]
 gender = int(id2[0])
 
 if gender >= 3:
-    answer = f"나는 20{year}년 "
+    year = "20" + year
 else:
-    answer = f"나는 19{year}년 "
+    year = "19" + year
 
-answer += f"{month}월 {day}일에 태어난 "
+answer = f"나는 {year}년 {month}월 {day}일에 태어난 "
 
 if gender % 2 == 1:
     answer += "남자입니다."
