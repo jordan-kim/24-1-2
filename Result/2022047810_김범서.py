@@ -1,8 +1,9 @@
 while True:
     id = input("주민등록번호를 입력하세요: ")
-    id1, id2 = id.split("-")
-    if len(id1) == 6 and len(id2) == 7:
-        break
+    if "-" in id:
+        id1, id2 = id.split("-")
+        if len(id1) == 6 and len(id2) == 7:
+            break
 
 year = id1[0:2]
 month = id1[2:4]
