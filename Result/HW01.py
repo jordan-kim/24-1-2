@@ -3,8 +3,7 @@ num=(input('주민번호를 입력하시오:'))
 if '-' in num:
     cn=num.replace('-','')
 
-birth=cn[0:6]
-intcn=int(cn)
+
 mog=int(cn[6])
 
 if mog<3:
